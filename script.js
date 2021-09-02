@@ -115,7 +115,7 @@ $(function () {
 
         $("#mobile-menu").css({
             "width": "90%",
-            "height": "85vh",
+            "height": "62vh",
             "margin-top": "30%",
             "padding": "20px 0",
             "display": "none",
@@ -137,7 +137,7 @@ $(function () {
             "height": "0.5px",
             "margin-bottom": "0%",
             "position": "absolute",
-            "top": "360px",
+            "top": "390px",
             "background-color": "#e4e4e4",
         });
 
