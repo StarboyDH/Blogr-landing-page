@@ -346,6 +346,10 @@ footer {
     border-top-right-radius: 70px;
 }
 
+.footer-label {
+    display: block;
+}
+
 .footer-lists {
     font-family: var(--ubuntu-font);
     color: #fafafa;
@@ -565,6 +569,7 @@ footer {
         margin-bottom: 10%;
         font-size: 30px;
         text-align: center;
+        padding: 0 2px;
     }
 
     #phones-para {
@@ -602,7 +607,7 @@ footer {
     }
 
     footer {
-        height: 800px;
+        height: 700px;
         display: flex;
         flex-direction: column;
         align-items: center;
