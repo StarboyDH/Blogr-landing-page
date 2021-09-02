@@ -1,0 +1,591 @@
+/* GENERAL STYLES */ 
+
+:root {
+    --overpass-font: 'Overpass', sans-serif;
+    --ubuntu-font: 'Ubuntu', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-color: #fafafa;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+/* HEADER STYLES */
+
+header {
+    height: 50vh;
+    padding: 4% 8%;
+    background: url("images/bg-pattern-intro.svg") no-repeat 50% 50%, linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    border-bottom-left-radius: 70px;
+}
+
+h1 {
+    position: absolute;
+    top: 28%;
+    left: 33%;
+    text-align: center;
+    font-family: var(--overpass-font);
+    color: white;
+}
+
+#subtitle {
+    position: absolute;
+    top: 36%;
+    left: 36%;
+    text-align: center;
+    font-family: var(--ubuntu-font);
+    color: #ffe1d3;
+}
+
+#header-btns {
+    position: absolute;
+    top: 36%;
+    left: 23%;
+    width: 50%;
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+}
+
+#startForFree {
+    margin: 0 4%;
+    padding: 1.5%;
+    font-family: var(--ubuntu-font);
+    color: #da6669;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+#startForFree:hover {
+    color: white;
+    background-color: #fe7c84;
+    border-color: #fe7c84;
+}
+
+#learnMore {
+    margin: 0 2%;
+    padding: 1%;
+    font-family: var(--ubuntu-font);
+    color: #ffe1d3;
+    background-color: inherit;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+#learnMore:hover {
+    color: #fe7c84;
+    background-color: white;
+}
+
+/* NAVBAR STYLES */
+
+nav {
+    display: grid;
+    grid: auto / 10% 70% 20%;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.navdrop {
+    display: inline-block;
+    margin: 0 4%;
+    padding: 0 2%;
+    color: #ffe1d3;
+    font-family: var(--ubuntu-font);
+    cursor: pointer;
+}
+
+.navbtns {
+    display: inline-block;
+    margin: 0 5%;
+    font-family: var(--ubuntu-font);
+    color: #ffe1d3;
+    cursor: pointer;
+}
+
+#login:hover {
+    text-decoration: underline;
+}
+
+#sign-up {
+    padding: 5% 10%;
+    color: #fe7c84;
+    background-color: white;
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
+}
+
+#sign-up:hover {
+    color: white;
+    background-color: #fe7c84;
+}
+
+.arrow {
+    margin-left: 2px;
+}
+
+#hamburger-icon {
+    display: none;
+}
+
+/* DROP-LISTS OF NAVBAR STYLES */ 
+
+#droplist-container {
+    width: 50%;
+    margin-top: -7%;
+    padding-left: 15%;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+.droplist {
+    display: none;
+    width: 20%;
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 8%;
+    box-shadow: 5px 5px 5px -5px rgb(107, 107, 107);
+}
+
+#product-droplist {
+    position: absolute;
+    left: 180px;
+}
+
+#company-droplist {
+    position: absolute;
+    left: 350px;
+}
+
+#connect-droplist {
+    position: absolute;
+    left: 520px;
+}
+
+.droplinks {
+    display: block;
+    padding: 5px;
+    font-family: var(--ubuntu-font);
+}
+
+.droplinks:hover {
+    font-weight: bold;
+}
+
+
+/* EDITOR SECTION STYLES */
+
+#editor-section {
+    height: 140vh;
+    padding: 5%;
+    overflow: hidden;
+}
+
+#editor-title {
+    margin-top: 5%;
+    margin-bottom: 16%;
+    text-align: center;
+    font-family: var(--overpass-font);
+    color: #21415a;
+} 
+
+.para-titles {
+    font-family: var(--overpass-font);
+    color: #2c445c;
+}
+
+.para {
+    width: 40%;
+    margin-top: -1%;
+    margin-bottom: 5%;
+    font-family: var(--ubuntu-font);
+    color: #999ea2;
+}
+
+#editor-img {
+    position: relative;
+    top: -650px;
+    left: 50%;
+    overflow: hidden;
+}
+
+
+/* PHONES SECTION STYLES */
+
+#phones-section {
+    height: 50vh;
+    background: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    overflow: hidden;
+}
+
+#phones-title {
+    width: fit-content;
+    position: absolute;
+    top: 240%;
+    left: 55%;
+    font-family: var(--overpass-font);
+    color: white;
+}
+
+#phones-para {
+    width: 40%;
+    position: absolute;
+    top: 255%;
+    left: 55%;
+}
+
+#phones-img {
+    position: absolute;
+    top: 210%;
+    left: 8%;
+    z-index: 2;
+}
+
+#circles-img {
+    position: relative;
+    top: -150%;
+    left: -16%;
+}
+
+/* LAPTOP SECTION STYLES */
+
+#laptop-section {
+    height: 150vh;
+    overflow: hidden;
+}
+
+#laptop-para-title-1 {
+    width: fit-content;
+    position: absolute;
+    top: 330%;
+    left: 60%;
+    font-family: var(--overpass-font);
+    color: #25405b;
+}
+
+#laptop-para-title-2 {
+    width: fit-content;
+    position: absolute;
+    top: 365%;
+    left: 60%;
+    font-family: var(--overpass-font);
+    color: #25405b;
+}
+
+#laptop-para-1 {
+    width: 35%;
+    position: absolute;
+    top: 340%;
+    left: 60%;
+
+}
+ 
+#laptop-para-2 {
+    width: fit-content;
+    width: 35%;
+    position: absolute;
+    top: 375%;
+    left: 60%;
+
+}
+
+#laptop-img {
+    position: relative;
+    top: 180px;
+    left: -22%;
+}
+
+/* FOOTER STYLES */
+
+footer {
+    height: 40vh;
+    padding: 5%;
+    display: grid;
+    grid: auto / 20% 20% 20% 20%;
+    justify-content: center;
+    background-color: #24242c;
+    border-top-right-radius: 70px;
+}
+
+.footer-lists {
+    font-family: var(--ubuntu-font);
+    color: #fafafa;
+}
+
+.footer-links {
+    display: block;
+    margin: 10% 0;
+    color: #bebfc4;
+}
+
+
+
+
+/* MOBILE SIZES STYLES */
+
+@media screen and (max-width: 771px) {
+
+    /* GENERAL STYLES */
+
+    html, body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .para-titles {
+        position: relative;
+    }
+
+    .para {
+        position: relative;
+    }
+
+    /* HEADER STYLES */
+
+    header {
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    h1, #subtitle, #header-btns {
+        position: unset;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    #subtitle {
+        margin-top: -10%;
+        font-size: 18px;
+    }
+
+    #header-btns {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .h-btn {
+        width: 30%;
+        padding: 50%;
+    }
+
+    /* NAVBAR STYLES */
+
+    nav {
+        margin-top: -20%;
+        padding: 0 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #navlist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        width: 80%;
+    }
+
+    .navdrop {
+        margin: 20px 0;
+        font-weight: bold;
+        color: #203e58;
+    }
+
+    #navbtn {
+        padding: 0;
+        width: 40%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 370px;
+    }
+
+    #hamburger-icon {
+        display: inline-block;
+    }
+
+    /* DROP-LISTS STYLES */
+
+    #product-droplist, #company-droplist ,#connect-droplist {
+        width: 70%;
+        margin: -5px 0;
+        padding: 5px 5px;
+        position: unset;
+        background-color: #efeff1;
+        text-align: center;
+        box-shadow: 0 0;
+    }
+
+    .droplinks {
+        margin: 5px 0;
+        color: #606e7b;
+    }
+
+    /* EDITOR SECTION STYLES */
+
+    #editor-section {
+        padding: 0;
+        width: 100%;
+        height: 240vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #editor-title {
+        order: 1;
+        margin-top: 20%;
+    }
+
+    #editor-img {
+        max-width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        order: 2;
+    }
+
+    #editor-para-title-1 {
+        order: 3;
+        margin-top: 20%;
+    }
+
+    #editor-para-title-2 {
+        order: 5;
+        margin-top: 20%;
+    }
+
+    #editor-para-1 {
+        order: 4;
+        width: 70%;
+        text-align: center;
+        line-height: 22px;
+    }
+
+    #editor-para-2 {
+        order: 6;
+        width: 70%;
+        text-align: center;
+        line-height: 22px;
+    }
+
+
+    /* PHONES SECTION STYLES */
+
+    #phones-section {
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #phones-img {
+        position: absolute;
+        top: 310%;
+        left: 0;
+        max-width: 100%;
+    }
+
+    #circles-img {
+        max-width: 100%;
+        position: relative;
+        top: -5%;
+        left: 0;
+    }
+
+    #phones-title {
+        width: fit-content;
+        position: unset;
+        margin-top: -30%;
+        margin-bottom: 10%;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #phones-para {
+        width: 80%;
+        position: unset;
+        text-align: center;
+    }
+
+    /* LAPTOP SECTION STYLES */
+
+    #laptop-section {
+        height: 160vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #laptop-img {
+        position: unset;
+        margin-top: 10%;
+    }
+
+    #laptop-para-title-1, #laptop-para-title-2 {
+        position: unset;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    #laptop-para-1, #laptop-para-2  {
+        position: unset;
+        width: 70%;
+        text-align: center;
+
+    }
+
+    footer {
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .footer-lists {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin: 20% 0;
+    }
+
+}
