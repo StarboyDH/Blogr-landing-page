@@ -111,11 +111,15 @@ $(function () {
             "align-items": "center",
         });
 
+        $("#product-arrow").css({
+            "transform": "rotate(180deg)",
+        });
+
         $("#mobile-menu").append($("#product"), $("#product-droplist"), $("#company"), $("#company-droplist"), $("#connect"), $("#connect-droplist"), $("<div></div>", {id: "line"}), $("#navbtn"));
 
         $("#mobile-menu").css({
             "width": "90%",
-            "height": "62vh",
+            "height": "500px",
             "margin-top": "30%",
             "padding": "20px 0",
             "display": "none",
@@ -163,7 +167,7 @@ $(function () {
         
         let productClicks = 0;
         $("#product").click(function() {
-            if (productClicks % 2 === 0) {
+            if (productClicks % 2 !== 0) {
                 $("#product-droplist").slideDown(400);
                 $("#company-droplist").slideUp(400);
                 $("#connect-droplist").slideUp(400);
